@@ -1,7 +1,23 @@
 aid: vici-sports
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vici-sports.png
 name: VICI Sports
-description: VICI Sports is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: VICI Sports operates FanFest, a white-labeled fan engagement platform for the sports industry
+  that "turns fan engagement into revenue" by recognizing every fan action across stadiums, homes, and
+  bars and rewarding it automatically. The company reports 150+ activations with sports brands and 30M+
+  fans commercialized, with partners including AC Milan, the Premier League, Paris Saint-Germain, and
+  Manchester City. Backed by Techstars. No public developer/API surface is currently published; the
+  fanfest.vip site is a single-page marketing app with a contact form only.
 url: https://raw.githubusercontent.com/api-evangelist/vici-sports/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sports
+- Fan Engagement
+- Sports Technology
+- Marketing
+- Loyalty
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/vici-sports-domain-security.yml
 - type: Website
   url: https://fanfest.vip/
